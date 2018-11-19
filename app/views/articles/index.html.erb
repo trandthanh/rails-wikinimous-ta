@@ -1,0 +1,8 @@
+<% @articles.each do |a| %>
+  <%= link_to article_path(a) do %>
+    <h1><%= a.title %></h1>
+  <% end %>
+  <p><%= a.content %></p>
+<% end %>
+
+<%= link_to "Add a new article", new_article_path  %>
